@@ -1,0 +1,105 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background-color: $main-dg-color;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  @extend %flex-center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+
+  @include transition(fill);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    background-color: inherit;
+  }
+}
+
+.close-btn__img {
+  width: 11px;
+  height: 11px;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+
+.modal__input-block:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal__label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $secondary-color;
+}
+
+.modal__input-area {
+  position: relative;
+}
+
+.modal__input {
+  padding: 12px 42px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: $main-color;
+
+  @include transition(border-color);
+
+  .modal__input-area:hover &,
+  &:not(:placeholder-shown) {
+    border-color: $accent-color;
+  }
+}
+
+.modal__icon-img {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: $main-color;
+
+  @include transition(fill);
+
+  .modal__input-area:hover &,
+  .modal__input:not(:placeholder-shown) + & {
+    fill: $accent-color;
+  }
+}

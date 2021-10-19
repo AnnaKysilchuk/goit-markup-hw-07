@@ -1,0 +1,36 @@
+.social {
+  @extend %flex-center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  @include transition(background-color);
+
+  &:hover,
+  .social__link--link:focus & {
+    background-color: $accent-color;
+  }
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: $third-color;
+
+  @include transition(fill);
+
+  .social__link:hover &,
+  .social__link--link:focus & {
+    fill: $main-dg-color;
+  }
+}
