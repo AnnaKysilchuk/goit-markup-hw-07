@@ -13,10 +13,6 @@
   padding-bottom: 60px;
 }
 
-.logo__footer {
-  color: $main-dg-color;
-}
-
 .address__list {
   margin-top: 30px;
   font-style: normal;
@@ -67,14 +63,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $main-dg-color;
-}
-
-.social__link--footer {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social__icon--footer {
-  fill: $main-dg-color;
 }
 
 .footer__subscription--block {

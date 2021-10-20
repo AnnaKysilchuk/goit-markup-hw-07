@@ -16,7 +16,7 @@
   @include transition(border-color);
 
   &:hover,
-  .clients__company:focus & {
+  & > .clients__company:focus {
     border-color: $accent-color;
   }
 }
