@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   min-height: 80px;
-  background-color: #fff;
+  background-color: var(--main-dg-color);
   border-bottom: 1px solid #ececec;
   z-index: 1;
 }
@@ -35,21 +35,18 @@
 }
 
 .navigation__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $main-color;
+  @include text-style(14px, 1.14, 0.02em, 500);
+  color: var(--main-color);
   @include transition(color);
 
   .navigation__item:hover &,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 }
 
 .current {
-  color: $accent-color;
+  color: var(--accent-color);
 
   &::after {
     content: '';
@@ -59,7 +56,7 @@
     width: 100%;
     height: 4px;
     margin-bottom: -1px;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     border-radius: 2px;
   }
 }
@@ -67,10 +64,7 @@
 .authorisation {
   @extend %flex-center;
   padding: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include text-style(14px, 1.14, 0.02em, 500);
 }
 
 .authorisation__item {
@@ -84,22 +78,22 @@
 
 .authorisation__link {
   @extend %flex-center;
-  color: $secondary-color;
+  color: var(--secondary-color);
   @include transition(color);
 
   .authorisation__item:hover &,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 }
 
 .authorisation__icon {
-  fill: $secondary-color;
+  fill: var(--secondary-color);
   margin-right: 10px;
   @include transition(fill);
 
   .authorisation__item:hover &,
   &:focus {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }

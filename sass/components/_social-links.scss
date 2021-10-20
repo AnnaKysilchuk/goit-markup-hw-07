@@ -19,7 +19,7 @@
 
   &:hover,
   & > .social__link--link:focus {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
   }
 }
 
@@ -42,13 +42,13 @@
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  fill: $third-color;
+  fill: var(--third-color);
 
   @include transition(fill);
 
   .social__link:hover &,
   .social__link--link:focus & {
-    fill: $main-dg-color;
+    fill: var(--main-dg-color);
   }
 }
 
@@ -56,10 +56,10 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   & > .social__link--link:focus {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
   }
 }
 
 .social__icon--footer {
-    fill: $main-dg-color;
+  fill: var(--main-dg-color);
 }

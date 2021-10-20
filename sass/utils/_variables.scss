@@ -1,11 +1,13 @@
-$main-color: #212121;
-$accent-color: #2196f3;
-$hover-accent-color: #188ce8;
-$secondary-color: #757575;
-$main-dg-color: #ffffff;
-$secondary-dg-color: #f5f4fa;
-$third-color: #afb1b8;
-$third-dg-color: #2f303a;
+:root {
+  --main-color: #212121;
+  --accent-color: #2196f3;
+  --hover-accent-color: #188ce8;
+  --secondary-color: #757575;
+  --main-dg-color: #ffffff;
+  --secondary-dg-color: #f5f4fa;
+  --third-color: #afb1b8;
+  --third-dg-color: #2f303a;
+}
 
 %flex-center {
   display: flex;
@@ -14,4 +16,11 @@ $third-dg-color: #2f303a;
 
 @mixin transition($property) {
   transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin text-style($fs, $lh, $ls, $fw: normal) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  font-weight: $fw;
 }

@@ -1,5 +1,5 @@
 .footer {
-  background-color: $third-dg-color;
+  background-color: var(--third-dg-color);
 }
 
 .footer__container {
@@ -15,10 +15,7 @@
 
 .address__list {
   margin-top: 30px;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include text-style(14px, 1.71, 0.03em);
 }
 
 .address__link {
@@ -28,18 +25,18 @@
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 }
 
 .address__link--map {
-  color: $main-dg-color;
+  color: var(--main-dg-color);
 
   @include transition(color);
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 }
 
@@ -57,12 +54,9 @@
 
 .footer__title {
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include text-style(14px, 1.14, 0.03em, bold);
   text-transform: uppercase;
-  color: $main-dg-color;
+  color: var(--main-dg-color);
 }
 
 .footer__subscription--block {
@@ -83,7 +77,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: $main-dg-color;
+  color: var(--main-dg-color);
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);

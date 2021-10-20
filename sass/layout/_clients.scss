@@ -6,7 +6,7 @@
   width: 170px;
   height: 92px;
   padding: 16px 32px;
-  border: 1px solid $third-color;
+  border: 1px solid var(--third-color);
   border-radius: 4px;
 
   &:not(:last-child) {
@@ -17,7 +17,7 @@
 
   &:hover,
   & > .clients__company:focus {
-    border-color: $accent-color;
+    border-color: var(--accent-color);
   }
 }
 
@@ -29,12 +29,12 @@
 }
 
 .clients__icon {
-  fill: $third-color;
+  fill: var(--third-color);
 
   @include transition(fill);
 
   .clients__item:hover &,
   .clients__company:focus & {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }
