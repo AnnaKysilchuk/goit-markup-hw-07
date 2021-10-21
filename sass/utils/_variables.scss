@@ -8,19 +8,3 @@
   --third-color: #afb1b8;
   --third-dg-color: #2f303a;
 }
-
-%flex-center {
-  display: flex;
-  align-items: center;
-}
-
-@mixin transition($property) {
-  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@mixin text-style($fs, $lh, $ls, $fw: normal) {
-  font-size: $fs;
-  line-height: $lh;
-  letter-spacing: $ls;
-  font-weight: $fw;
-}

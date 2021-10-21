@@ -9,11 +9,6 @@
   --third-dg-color: #2f303a;
 }
 
-.logo, .social, .header__container, .site-navigation, .navigation, .navigation__item, .authorisation, .authorisation__item, .authorisation__link, .hero__container, .benefits__list, .activity__list, .team__list, .clients__list, .clients__company, .close-btn, .agreement, .agreement__place, .modal__btn, .subscription, .subscription__btn, .portfolio__filter {
-  display: flex;
-  align-items: center;
-}
-
 .list {
   padding: 0;
   margin: 0;
@@ -34,6 +29,11 @@ p {
 
 .no-gap {
   display: block;
+}
+
+.logo, .social, .header__container, .site-navigation, .navigation, .navigation__item, .authorisation, .authorisation__item, .authorisation__link, .hero__container, .benefits__list, .activity__list, .team__list, .clients__list, .clients__company, .close-btn, .agreement, .agreement__place, .modal__btn, .subscription, .subscription__btn, .portfolio__filter {
+  display: flex;
+  align-items: center;
 }
 
 body {
@@ -270,7 +270,7 @@ body {
   max-width: 1600px;
   height: 600px;
   padding: 200px 0;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg.jpg);
 }
 
 .hero__title {
